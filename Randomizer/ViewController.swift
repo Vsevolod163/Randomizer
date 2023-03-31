@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     @IBOutlet var minimumValueLabel: UILabel!
     @IBOutlet var maximumValueLabel: UILabel!
