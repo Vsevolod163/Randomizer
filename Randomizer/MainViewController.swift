@@ -21,7 +21,15 @@ final class MainViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Go to SettingsVC")
+        guard let settingsVC = segue.destination as? SettingsViewController else { return }
+        settingsVC.minimumValue = minimumValueLabel.text
+        settingsVC.maximumValue = maximumValueLabel.text
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard let settingsVC = segue.source as? SettingsViewController else { return }
+        minimumValueLabel.text = settingsVC.minimumValueTF.text
+        maximumValueLabel.text = settingsVC.maximumValueTF.text
     }
 
     @IBAction func getRandomNumber() {
