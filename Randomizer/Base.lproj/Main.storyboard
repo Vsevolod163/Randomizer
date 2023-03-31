@@ -11,7 +11,7 @@
         <!--Random Number-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Randomizer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Randomizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="948.83720930232562" y="-2.5751072961373391"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="377-rQ-sif">
             <objects>
-                <viewController id="CdM-Sm-Y1N" sceneMemberID="viewController">
+                <viewController id="CdM-Sm-Y1N" customClass="SettingsViewController" customModule="Randomizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lm4-lB-90O">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,6 +135,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelButtonTapped" destination="CdM-Sm-Y1N" eventType="touchUpInside" id="UcS-Tj-OgC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -150,6 +153,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XRD-lT-kBz"/>
+                    <connections>
+                        <outlet property="maximumValueTF" destination="YcY-eJ-52B" id="JyR-tC-kKp"/>
+                        <outlet property="minimumValueTF" destination="v34-Td-0b0" id="gNb-Rs-Pkr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ifm-70-2zA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

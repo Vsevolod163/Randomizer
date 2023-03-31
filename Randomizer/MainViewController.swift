@@ -19,6 +19,10 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         getRandomNumberButton.layer.cornerRadius = 10
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Go to SettingsVC")
+    }
 
     @IBAction func getRandomNumber() {
         
@@ -29,4 +33,5 @@ final class MainViewController: UIViewController {
             .formatted()
     }
 }
+
 
