@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol SettingsViewControllerDelegate {
+protocol SettingsViewControllerDelegate: AnyObject {
     func setValue(for randomNumber: RandomNumber)
 }
 
@@ -34,6 +34,7 @@ final class MainViewController: UIViewController {
         guard let navigationVC = segue.destination as? UINavigationController else { return }
         guard let settingsVC = navigationVC.topViewController as? SettingsViewController else { return }
         settingsVC.randomNumber = randomNumber
+        settingsVC.delegate = self
     }
 
     @IBAction func getRandomNumberButtonPressed() {
