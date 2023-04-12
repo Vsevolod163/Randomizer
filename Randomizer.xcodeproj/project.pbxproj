@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C605B42629E6C209001BFC0E /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = C605B42529E6C209001BFC0E /* RandomNumber.swift */; };
 		C6A69C2929D707EB0006FF84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A69C2829D707EB0006FF84 /* AppDelegate.swift */; };
 		C6A69C2B29D707EB0006FF84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A69C2A29D707EB0006FF84 /* SceneDelegate.swift */; };
 		C6A69C2D29D707EB0006FF84 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A69C2C29D707EB0006FF84 /* MainViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C605B42529E6C209001BFC0E /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
 		C6A69C2529D707EB0006FF84 /* Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A69C2829D707EB0006FF84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6A69C2A29D707EB0006FF84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C605B42129E6C1C8001BFC0E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C6A69C2829D707EB0006FF84 /* AppDelegate.swift */,
+				C6A69C2A29D707EB0006FF84 /* SceneDelegate.swift */,
+				C6A69C3629D707EC0006FF84 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C605B42229E6C1D6001BFC0E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C6A69C2E29D707EB0006FF84 /* Main.storyboard */,
+				C6A69C3329D707EC0006FF84 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C605B42329E6C1E2001BFC0E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6A69C2C29D707EB0006FF84 /* MainViewController.swift */,
+				C6A69C3C29D725D80006FF84 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C605B42429E6C1F0001BFC0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C605B42529E6C209001BFC0E /* RandomNumber.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C6A69C1C29D707EB0006FF84 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +96,11 @@
 		C6A69C2729D707EB0006FF84 /* Randomizer */ = {
 			isa = PBXGroup;
 			children = (
-				C6A69C2829D707EB0006FF84 /* AppDelegate.swift */,
-				C6A69C2A29D707EB0006FF84 /* SceneDelegate.swift */,
-				C6A69C2C29D707EB0006FF84 /* MainViewController.swift */,
-				C6A69C3C29D725D80006FF84 /* SettingsViewController.swift */,
-				C6A69C2E29D707EB0006FF84 /* Main.storyboard */,
+				C605B42429E6C1F0001BFC0E /* Models */,
+				C605B42329E6C1E2001BFC0E /* ViewControllers */,
+				C605B42229E6C1D6001BFC0E /* Storyboards */,
+				C605B42129E6C1C8001BFC0E /* App */,
 				C6A69C3129D707EC0006FF84 /* Assets.xcassets */,
-				C6A69C3329D707EC0006FF84 /* LaunchScreen.storyboard */,
-				C6A69C3629D707EC0006FF84 /* Info.plist */,
 			);
 			path = Randomizer;
 			sourceTree = "<group>";
@@ -143,6 +178,7 @@
 			files = (
 				C6A69C2D29D707EB0006FF84 /* MainViewController.swift in Sources */,
 				C6A69C2929D707EB0006FF84 /* AppDelegate.swift in Sources */,
+				C605B42629E6C209001BFC0E /* RandomNumber.swift in Sources */,
 				C6A69C2B29D707EB0006FF84 /* SceneDelegate.swift in Sources */,
 				C6A69C3D29D725D80006FF84 /* SettingsViewController.swift in Sources */,
 			);
