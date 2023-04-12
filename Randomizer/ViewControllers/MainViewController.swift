@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SettingsViewControllerDelegate {
+    func setValue(for randomNumber: RandomNumber)
+}
+
 final class MainViewController: UIViewController {
 
     @IBOutlet var minimumValueLabel: UILabel!
@@ -35,8 +39,12 @@ final class MainViewController: UIViewController {
     @IBAction func getRandomNumberButtonPressed() {
         randomValueLabel.text = randomNumber.getRandom.formatted()
     }
-    
-    
 }
 
+// MARK: - SettingsViewControllerDelegate
+extension MainViewController: SettingsViewControllerDelegate {
+    func setValue(for randomNumber: RandomNumber) {
+        self.randomNumber = randomNumber
+    }
+}
 
